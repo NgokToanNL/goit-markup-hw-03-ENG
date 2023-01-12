@@ -1,0 +1,271 @@
+/* Main page */
+
+/* Primary text color #434455 */
+/* Secondary text color (title) #2E2F42 */
+/* White text color #FFFFFF */
+/* Footer text color #E7E9FC */
+/* Logo color blue #4D5AE5 */
+/* logo color white #F4F4FD */
+/* Header bg color #FFFFFF */
+/* Hero bg color #2E2F42 */
+/* Benefits bg color #E5E5E5 */
+/* Team bg color #F4F4FD */
+/* Footer bg color #2E2F42 */
+/* Accent color #4D5AE5 */
+/* Button bg color #4D5AE5 */
+/* Button color #FFFFFF */
+
+/* Portfolio page */
+
+/* Button active bg #404BBF */
+/* Button non-active bg #E7E9FC */
+/* Button active text color #FFFFFF */
+/* Button non-active text color #4D5AE5 */
+
+
+
+:root{
+    --primary-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --white-text-color: #FFFFFF;
+    --footer-text-color: #E7E9FC;
+    --logo-color-blue: #4D5AE5;
+    --logo-color-white: #F4F4FD;
+    --header-bg-clr: #FFFFFF;
+    --hero-bg-clr: #2E2F42;
+    --benefits-bg-clr: #E5E5E5;
+    --team-bg-clr: #F4F4FD;
+    --footer-bg-clr: #2E2F42;
+    --accent-color: #4D5AE5; 
+    --btn-bg-clr: #4D5AE5;
+    --btn-txt-clr: #FFFFFF;
+    --card-bg-clr: #FFFFFF;
+    /* Portfolio page */
+    --btn-active-bg: #404BBF;
+    --btn-non-actvive-bg: #E7E9FC;
+    --btn-active-txt-clr: #FFFFFF;
+    --btn-non-active-txt-clr: #4D5AE5;
+}
+
+.page {
+    color: var(--primary-text-color);
+    background-color: var(--benefits-bg-clr);
+
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.02em;
+}
+
+/* Скидання всіх крапок у списках */
+
+.list {
+    list-style: none;
+}
+
+/* Page header */
+
+.page-header {
+    background-color: var(--header-bg-clr);
+}
+
+/* Logo */
+
+.logo {
+    color: var(--title-text-color);
+    text-decoration: none;
+
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.logo > .blue {
+    color: var(--logo-color-blue);
+}
+
+/* site nav */
+
+.site-nav .link {
+    color: var(--title-text-color);
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-contact .link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.site-contact .link:hover,
+.site-contact .link:focus {
+    color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero{
+    text-align: center;
+    background-color: var(--hero-bg-clr);
+}
+.hero-title {
+    color: var(--white-text-color);
+
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button.primary {
+    color: var(--btn-txt-clr);
+    background-color: var(--btn-bg-clr);
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    
+    letter-spacing: 0.04em;
+}
+
+/* Наші переваги */
+
+.benefits {
+    background-color: var(--benefits-bg-clr);
+}
+
+.benefits .section-title {
+    color: var(--title-text-color);
+    display: none;
+}
+
+.benefits-list .title {
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.section .text {
+    color: var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: 1.5;
+}
+ 
+/* Чим ми займаємося */
+
+.section.work {
+    background-color: var(--benefits-bg-clr);
+}
+
+.section-title {
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* Team */
+
+.section.team {
+    background-color: var(--team-bg-clr);
+}
+
+.team-list {
+    text-align: center;
+}
+
+.team-list .title {
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    
+    text-align: center;
+}
+
+.team-list .text {
+    color: var(--primary-text-color);
+
+    font-size: 16px;
+    line-height: 1.5;
+    
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--footer-bg-clr);
+}
+
+.logo > .white {
+    color: var(--logo-color-white);
+}
+
+footer > .text {
+    color: var(--footer-text-color);
+
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* Portfolio */
+
+/* Buttons' list */
+.button-portfolio {
+    color: var(--btn-non-active-txt-clr);
+    background-color: var(--btn-non-actvive-bg);
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+    color: var(--btn-active-txt-clr);
+    background-color: var(--btn-active-bg);
+}
+
+/* Content list */
+
+.content li {
+    background-color: var(--card-bg-clr);
+}
+
+.content .title {
+    color: var(--title-text-color);
+}
+
+.content p {
+    color: var(--primary-text-color)
+}
