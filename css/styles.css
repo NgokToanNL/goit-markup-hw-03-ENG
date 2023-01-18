@@ -18,7 +18,7 @@
 /* Portfolio page */
 
 /* Button active bg #404BBF */
-/* Button non-active bg #E7E9FC */
+/* Button non-active bg #F4F4FD */
 /* Button active text color #FFFFFF */
 /* Button non-active text color #4D5AE5 */
 
@@ -42,12 +42,14 @@
     --card-bg-clr: #FFFFFF;
     /* Portfolio page */
     --btn-active-bg: #404BBF;
-    --btn-non-actvive-bg: #E7E9FC;
+    --btn-non-actvive-bg: #F4F4FD;
     --btn-active-txt-clr: #FFFFFF;
     --btn-non-active-txt-clr: #4D5AE5;
 }
 
 .page {
+    margin: 0 0;
+
     color: var(--primary-text-color);
     background-color: var(--benefits-bg-clr);
 
@@ -59,6 +61,21 @@
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 1128px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Page header */
@@ -119,21 +136,27 @@
 /* Hero */
 
 .hero{
+    padding-top: 188px;
+    padding-bottom: 188px;
+
     text-align: center;
     background-color: var(--hero-bg-clr);
 }
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 48px;
     color: var(--white-text-color);
 
-    font-weight: 700;
+    font-weight: 700; 
     font-size: 56px;
     line-height: 1.07;
 }
 
 .button {
     cursor: pointer;
+    border: 1px solid transparent;
 }
-
+ 
 .button.primary {
     color: var(--btn-txt-clr);
     background-color: var(--btn-bg-clr);
@@ -144,6 +167,10 @@
     line-height: 1.5;
     
     letter-spacing: 0.04em;
+    text-align: center;
+
+    border-radius: 4px;
+    padding: 16px 32px;
 }
 
 /* Наші переваги */
@@ -152,12 +179,21 @@
     background-color: var(--benefits-bg-clr);
 }
 
+.benefits .container{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .benefits .section-title {
+    margin-top: 0;
     color: var(--title-text-color);
     display: none;
 }
 
 .benefits-list .title {
+    margin-top: 0;
+    margin-bottom: 8px;
+
     color: var(--title-text-color);
 
     font-weight: 500;
@@ -166,6 +202,9 @@
 }
 
 .section .text {
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: var(--primary-text-color);
 
     font-size: 16px;
@@ -175,10 +214,13 @@
 /* Чим ми займаємося */
 
 .section.work {
+    padding-top: 0;
+    padding-bottom: 120px;
     background-color: var(--benefits-bg-clr);
 }
 
 .section-title {
+    margin-bottom: 72px;
     color: var(--title-text-color);
 
     font-weight: 700;
@@ -195,15 +237,32 @@
     background-color: var(--team-bg-clr);
 }
 
+.team .container {
+    padding-top: 120px;
+    padding-bottom: 120px;  
+}
+
+.team. .section-title {
+    margin-bottom: 72px;
+}
+
 .team-list {
     text-align: center;
 }
 
 .team-card {
+    padding-bottom: 32px;
     background-color: var(--card-bg-clr);
 }
 
+.team-card > img {
+    margin-bottom: 32px;
+} 
+
 .team-list .title {
+    margin-top: 0;
+    margin-bottom: 8px;
+
     color: var(--title-text-color);
 
     font-weight: 500;
@@ -228,11 +287,20 @@
     background-color: var(--footer-bg-clr);
 }
 
+.footer .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .logo > .white {
     color: var(--logo-color-white);
 }
 
-footer > .text {
+.logo.footer {
+    margin-bottom: 16px;
+}
+
+footer .text {
     color: var(--footer-text-color);
 
     font-size: 16px;
@@ -247,10 +315,16 @@ footer > .text {
     display: none;
 }
 
+.portfolio .container {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
 /* Buttons' list */
 .button-portfolio {
     color: var(--btn-non-active-txt-clr);
     background-color: var(--btn-non-actvive-bg);
+    border: 1px solid #E7E9FC;
 
     font-family: inherit;
     font-weight: 500;
@@ -261,24 +335,46 @@ footer > .text {
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
+
+    border-radius: 4px;
 }
 
 .button-portfolio:hover,
 .button-portfolio:focus {
     color: var(--btn-active-txt-clr);
     background-color: var(--btn-active-bg);
+    border: 1px solid transparent;
 }
 
+.section.buttons{
+    margin-bottom: 72px;
+}
 /* Content list */
 
 .content-list .content-card {
+    padding-bottom: 32px;
+
     background-color: var(--card-bg-clr);
+    text-align: center;
+}
+
+.content-card img {
+    margin-bottom: 32px;
+}
+
+.content-list .link {
+    text-decoration: none;
 }
 
 .content-list .title {
+    margin-top: 0;
+    margin-bottom: 8px;
+
     color: var(--title-text-color);
+
 }
 
 .content-list .text {
     color: var(--primary-text-color)
+
 }
