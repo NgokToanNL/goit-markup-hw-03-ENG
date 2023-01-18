@@ -97,6 +97,10 @@
     line-height: 1.5;
 }
 
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
@@ -134,7 +138,7 @@
     color: var(--btn-txt-clr);
     background-color: var(--btn-bg-clr);
 
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -195,6 +199,10 @@
     text-align: center;
 }
 
+.team-card {
+    background-color: var(--card-bg-clr);
+}
+
 .team-list .title {
     color: var(--title-text-color);
 
@@ -216,7 +224,7 @@
 
 /* Footer */
 
-footer {
+.footer {
     background-color: var(--footer-bg-clr);
 }
 
@@ -234,12 +242,17 @@ footer > .text {
 
 /* Portfolio */
 
+.content .section-title {
+    color: var(--title-text-color);
+    display: none;
+}
+
 /* Buttons' list */
 .button-portfolio {
     color: var(--btn-non-active-txt-clr);
     background-color: var(--btn-non-actvive-bg);
 
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -258,14 +271,14 @@ footer > .text {
 
 /* Content list */
 
-.content li {
+.content-list .content-card {
     background-color: var(--card-bg-clr);
 }
 
-.content .title {
+.content-list .title {
     color: var(--title-text-color);
 }
 
-.content p {
+.content-list .text {
     color: var(--primary-text-color)
 }
