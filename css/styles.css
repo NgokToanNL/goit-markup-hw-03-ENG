@@ -87,6 +87,7 @@ img {
 
 .page-header {
     background-color: var(--header-bg-clr);
+    border-bottom-style: 1px solid var(--footer-text-color)
 }
 
 /* Logo */
@@ -297,7 +298,7 @@ img {
     padding-bottom: 120px;  
 }
 
-.team. .section-title {
+.team .section-title {
     margin-bottom: 72px;
 }
 
